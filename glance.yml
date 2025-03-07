@@ -90,31 +90,27 @@ pages:
                     url: https://porofessor.gg/live/euw/cousinsbybirth-gawk
 
           - type: rss
-            title: JS/TS Ecosystem News
-            limit: 15
+            title: Modern Web News
+            limit: 12
             collapse-after: 8
             cache: 6h
             feeds:
-              - url: https://blog.angular.io/feed
-                title: Angular Blog
-              - url: https://reactjs.org/feed.xml
-                title: React Blog
-              - url: https://news.vuejs.org/feed.xml
-                title: Vue News
-              - url: https://devblogs.microsoft.com/typescript/feed/
-                title: TypeScript Blog
-              - url: https://svelte.dev/blog/rss.xml
-                title: Svelte Blog
-              - url: https://nextjs.org/feed.xml
-                title: Next.js Blog
-              - url: https://bun.sh/rss.xml
-                title: Bun Updates
+              - url: https://app.daily.dev/api/rss/b
+                title: daily.dev Browse
+              - url: https://app.daily.dev/api/rss/t/typescript
+                title: daily.dev TypeScript
+              - url: https://app.daily.dev/api/rss/t/javascript
+                title: daily.dev JavaScript
+              - url: https://app.daily.dev/api/rss/t/webdev
+                title: daily.dev WebDev
+              - url: https://frontendfoc.us/issues.rss
+                title: Frontend Focus
 
       - size: small
         widgets:
           - type: rss
             title: Dev Insights
-            limit: 12
+            limit: 10
             collapse-after: 6
             cache: 12h
             feeds:
@@ -126,8 +122,8 @@ pages:
                 title: Jake Archibald
               - url: https://kentcdodds.com/blog/rss.xml
                 title: Kent C. Dodds
-              - url: https://css-tricks.com/feed/
-                title: CSS-Tricks
+              - url: https://bytes.dev/archives/feed.xml
+                title: Bytes Newsletter
 
           - type: releases
             title: JS/TS Ecosystem Updates
@@ -149,13 +145,19 @@ pages:
         widgets:
           - type: reddit
             subreddit: javascript
-            limit: 10
+            limit: 8
             collapse-after: 5
 
-          - type: reddit
-            subreddit: typescript
+          - type: rss
+            title: Trending Tech
             limit: 10
-            collapse-after: 5
+            feeds:
+              - url: https://hnrss.org/newest?points=100
+                title: HN Top Stories
+              - url: https://changelog.com/news/feed
+                title: Changelog News
+              - url: https://thenewstack.io/feed
+                title: The New Stack
 
       - size: full
         widgets:
@@ -164,31 +166,34 @@ pages:
               - type: hacker-news
               - type: lobsters
 
-          - type: group
-            widgets:
-              - type: reddit
-                subreddit: webdev
-                show-thumbnails: true
-              - type: reddit
-                subreddit: reactjs
-                show-thumbnails: true
+          - type: rss
+            title: Tech Publications
+            style: horizontal-cards
+            limit: 8
+            feeds:
+              - url: https://app.daily.dev/api/rss/b
+                title: daily.dev Trending
+              - url: https://dev.to/feed
+                title: Dev.to
+              - url: https://web.dev/feed.xml
+                title: web.dev (Google)
+              - url: https://css-tricks.com/feed/
+                title: CSS-Tricks
 
       - size: small
         widgets:
           - type: rss
-            title: Frontend News
-            limit: 15
-            collapse-after: 10
+            title: Web Newsletters
+            limit: 12
+            collapse-after: 8
             feeds:
-              - url: https://frontendfront.com/feed/
-                title: Frontend Front
-              - url: https://daily.dev/blog/rss.xml
-                title: daily.dev Blog
-              - url: https://changelog.com/feed
-                title: The Changelog
-              - url: https://dev.to/feed/tag/javascript
-                title: Dev.to JavaScript
-              - url: https://dev.to/feed/tag/typescript
-                title: Dev.to TypeScript
-              - url: https://devblogs.microsoft.com/typescript/feed/
-                title: TypeScript Blog
+              - url: https://newsletter.systemdesign.one/feed
+                title: System Design
+              - url: https://javascriptweekly.com/rss
+                title: JavaScript Weekly
+              - url: https://nodeweekly.com/rss
+                title: Node Weekly
+              - url: https://frontendfoc.us/issues.rss
+                title: Frontend Focus
+              - url: https://tldr.tech/feed/daily-tech
+                title: TLDR Tech
