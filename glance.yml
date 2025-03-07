@@ -18,12 +18,16 @@ pages:
             cache: 1m
             title: Services Status
             sites:
-              - title: roan.dev
-                url: http://roan.dev
-                icon: simple-icons:netlify
-              - title: ente.roan.dev
-                url: http://ente.roan.dev:8080
-                icon: simple-icons:firebase
+              - title: Roan.Dev
+                url: https://www.roan.dev
+              - title: Apex Rotation
+                url: https://apex.roan.dev
+              - title: LinkApp
+                url: https://links.roan.dev/roan
+              - title: Github-Readme
+                url: https://readme.roan.dev
+              - title: LinkApp home
+                url: https://links.roan.dev/roanhome
 
       - size: full
         widgets:
@@ -36,29 +40,29 @@ pages:
             title: Favorite Services
             sites:
               - title: Railway
-                url: https://railway.com/project/fc964cf1-2f87-42b4-b53d-e860cb036f01?environmentId=484968ba-dd7b-47ef-a7f2-eabf3be39a70
-                icon: simple-icons:railway
+                url: https://railway.app
+                icon: si:railway
               - title: Claude AI
                 url: https://claude.ai/new
-                icon: simple-icons:openai
+                icon: mdi:robot
               - title: Proton Mail
-                url: https://mail.proton.me/
-                icon: simple-icons:protonmail
+                url: https://mail.proton.me
+                icon: si:protonmail
               - title: Proton Calendar
-                url: https://calendar.proton.me/
-                icon: simple-icons:proton
+                url: https://calendar.proton.me
+                icon: mdi:calendar
               - title: Cloudflare
-                url: https://dash.cloudflare.com/
-                icon: simple-icons:cloudflare
+                url: https://dash.cloudflare.com
+                icon: si:cloudflare
               - title: Cryptee
                 url: https://crypt.ee/docs
-                icon: simple-icons:keybase
+                icon: mdi:lock
               - title: WhatsApp Web
                 url: https://web.whatsapp.com
-                icon: simple-icons:whatsapp
+                icon: si:whatsapp
               - title: Hogeschool Rotterdam
                 url: https://mijn.hr.nl/
-                icon: simple-icons:education
+                icon: mdi:school
 
           - type: bookmarks
             groups:
