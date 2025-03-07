@@ -1,0 +1,192 @@
+pages:
+  - name: Home
+    hide-desktop-navigation: true
+    center-vertically: true
+    columns:
+      - size: small
+        widgets:
+          - type: calendar
+            first-day-of-week: monday
+            timezone: Europe/Amsterdam
+
+          - type: weather
+            location: Amsterdam, Netherlands
+            units: metric
+            hour-format: 24h
+
+          - type: monitor
+            cache: 1m
+            title: Services Status
+            sites:
+              - title: roan.dev
+                url: https://roan.dev
+                icon: mdi:web
+              - title: ente.roan.dev
+                url: https://ente.roan.dev
+                icon: mdi:image-album
+
+      - size: full
+        widgets:
+          - type: search
+            autofocus: true
+            engine: custom
+            custom-engine: https://search.roan.dev/?q={query}
+
+          - type: monitor
+            cache: 1m
+            title: Favorite Services
+            sites:
+              - title: Railway
+                url: https://railway.app
+                icon: si:railway
+              - title: Claude AI
+                url: https://claude.ai
+                icon: mdi:robot
+              - title: Proton Mail
+                url: https://mail.proton.me
+                icon: si:protonmail
+              - title: Proton Calendar
+                url: https://calendar.proton.me
+                icon: mdi:calendar
+              - title: Cloudflare
+                url: https://dash.cloudflare.com
+                icon: si:cloudflare
+              - title: Cryptee
+                url: https://cryptee.co
+                icon: mdi:lock
+              - title: WhatsApp Web
+                url: https://web.whatsapp.com
+                icon: si:whatsapp
+
+          - type: bookmarks
+            groups:
+              - title: Development
+                links:
+                  - title: GitHub
+                    url: https://github.com
+                  - title: GitLab
+                    url: https://gitlab.com
+                  - title: StackOverflow
+                    url: https://stackoverflow.com
+                  - title: TypeScript Docs
+                    url: https://www.typescriptlang.org/docs/
+                  - title: MDN Web Docs
+                    url: https://developer.mozilla.org/
+              - title: Productivity
+                links:
+                  - title: Notion
+                    url: https://notion.so
+                  - title: Google Drive
+                    url: https://drive.google.com
+              - title: Tools
+                links:
+                  - title: CodeSandbox
+                    url: https://codesandbox.io/
+                  - title: StackBlitz
+                    url: https://stackblitz.com/
+                  - title: CodePen
+                    url: https://codepen.io/
+
+          - type: rss
+            title: JS/TS Ecosystem News
+            limit: 15
+            collapse-after: 8
+            cache: 6h
+            feeds:
+              - url: https://blog.angular.io/feed
+                title: Angular Blog
+              - url: https://reactjs.org/feed.xml
+                title: React Blog
+              - url: https://news.vuejs.org/feed.xml
+                title: Vue News
+              - url: https://devblogs.microsoft.com/typescript/feed/
+                title: TypeScript Blog
+              - url: https://svelte.dev/blog/rss.xml
+                title: Svelte Blog
+              - url: https://nextjs.org/feed.xml
+                title: Next.js Blog
+              - url: https://bun.sh/rss.xml
+                title: Bun Updates
+
+      - size: small
+        widgets:
+          - type: rss
+            title: Dev Insights
+            limit: 12
+            collapse-after: 6
+            cache: 12h
+            feeds:
+              - url: https://www.joshwcomeau.com/rss.xml
+                title: Josh Comeau
+              - url: https://2ality.com/feeds/posts.atom
+                title: 2ality JS/TS
+              - url: https://jakearchibald.com/posts.rss
+                title: Jake Archibald
+              - url: https://kentcdodds.com/blog/rss.xml
+                title: Kent C. Dodds
+              - url: https://css-tricks.com/feed/
+                title: CSS-Tricks
+
+          - type: releases
+            title: JS/TS Ecosystem Updates
+            cache: 1d
+            repositories:
+              - microsoft/typescript
+              - facebook/react
+              - vuejs/core
+              - angular/angular
+              - sveltejs/svelte
+              - vercel/next.js
+              - oven-sh/bun
+              - denoland/deno
+              - nodejs/node
+
+  - name: Tech News
+    columns:
+      - size: small
+        widgets:
+          - type: reddit
+            subreddit: javascript
+            limit: 10
+            collapse-after: 5
+
+          - type: reddit
+            subreddit: typescript
+            limit: 10
+            collapse-after: 5
+
+      - size: full
+        widgets:
+          - type: group
+            widgets:
+              - type: hacker-news
+              - type: lobsters
+
+          - type: group
+            widgets:
+              - type: reddit
+                subreddit: webdev
+                show-thumbnails: true
+              - type: reddit
+                subreddit: reactjs
+                show-thumbnails: true
+
+      - size: small
+        widgets:
+          - type: rss
+            title: Frontend News
+            limit: 15
+            collapse-after: 10
+            feeds:
+              - url: https://frontendfront.com/feed/
+                title: Frontend Front
+              - url: https://daily.dev/blog/rss.xml
+                title: daily.dev Blog
+              - url: https://changelog.com/feed
+                title: The Changelog
+              - url: https://dev.to/feed/tag/javascript
+                title: Dev.to JavaScript
+              - url: https://dev.to/feed/tag/typescript
+                title: Dev.to TypeScript
+              - url: https://devblogs.microsoft.com/typescript/feed/
+                title: TypeScript Blog
