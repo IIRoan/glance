@@ -20,16 +20,16 @@ pages:
             sites:
               - title: roan.dev
                 url: http://roan.dev
-                icon: fa:server
+                icon: simple-icons:netlify
               - title: ente.roan.dev
                 url: http://ente.roan.dev:8080
-                icon: fa:database
+                icon: simple-icons:firebase
 
       - size: full
         widgets:
           - type: search
             autofocus: true
-            engine: duckduckgo
+            engine: google
 
           - type: monitor
             cache: 1m
@@ -37,28 +37,28 @@ pages:
             sites:
               - title: Railway
                 url: https://railway.com/project/fc964cf1-2f87-42b4-b53d-e860cb036f01?environmentId=484968ba-dd7b-47ef-a7f2-eabf3be39a70
-                icon: fa:train
+                icon: simple-icons:railway
               - title: Claude AI
                 url: https://claude.ai/new
-                icon: fa:robot
+                icon: simple-icons:openai
               - title: Proton Mail
                 url: https://mail.proton.me/
-                icon: fa:envelope
+                icon: simple-icons:protonmail
               - title: Proton Calendar
                 url: https://calendar.proton.me/
-                icon: fa:calendar
+                icon: simple-icons:proton
               - title: Cloudflare
                 url: https://dash.cloudflare.com/
-                icon: fa:cloud
+                icon: simple-icons:cloudflare
               - title: Cryptee
                 url: https://crypt.ee/docs
-                icon: fa:lock
+                icon: simple-icons:keybase
               - title: WhatsApp Web
                 url: https://web.whatsapp.com
-                icon: fa:whatsapp
+                icon: simple-icons:whatsapp
               - title: Hogeschool Rotterdam
                 url: https://mijn.hr.nl/
-                icon: fa:graduation-cap
+                icon: simple-icons:education
 
           - type: bookmarks
             groups:
