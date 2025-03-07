@@ -44,25 +44,25 @@ pages:
                 icon: si:railway
               - title: Claude AI
                 url: https://claude.ai/new
-                icon: mdi:robot
+                icon: mdi:claude
               - title: Proton Mail
                 url: https://mail.proton.me
                 icon: si:protonmail
               - title: Proton Calendar
                 url: https://calendar.proton.me
-                icon: mdi:calendar
+                icon: mdi:protoncalendar
               - title: Cloudflare
                 url: https://dash.cloudflare.com
                 icon: si:cloudflare
               - title: Cryptee
                 url: https://crypt.ee/docs
-                icon: mdi:lock
+                icon: mdi:crystal
               - title: WhatsApp Web
                 url: https://web.whatsapp.com
                 icon: si:whatsapp
               - title: Hogeschool Rotterdam
                 url: https://mijn.hr.nl/
-                icon: mdi:school
+                icon: mdi:gitbook
 
           - type: bookmarks
             groups:
