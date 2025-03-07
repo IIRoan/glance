@@ -19,73 +19,71 @@ pages:
             title: Services Status
             sites:
               - title: roan.dev
-                url: https://roan.dev
-                icon: mdi:web
+                url: http://roan.dev
+                icon: fa:server
               - title: ente.roan.dev
-                url: https://ente.roan.dev
-                icon: mdi:image-album
+                url: http://ente.roan.dev:8080
+                icon: fa:database
 
       - size: full
         widgets:
           - type: search
             autofocus: true
-            engine: custom
-            custom-engine: https://search.roan.dev/?q={query}
+            engine: duckduckgo
 
           - type: monitor
             cache: 1m
             title: Favorite Services
             sites:
               - title: Railway
-                url: https://railway.app
-                icon: si:railway
+                url: https://railway.com/project/fc964cf1-2f87-42b4-b53d-e860cb036f01?environmentId=484968ba-dd7b-47ef-a7f2-eabf3be39a70
+                icon: fa:train
               - title: Claude AI
-                url: https://claude.ai
-                icon: mdi:robot
+                url: https://claude.ai/new
+                icon: fa:robot
               - title: Proton Mail
-                url: https://mail.proton.me
-                icon: si:protonmail
+                url: https://mail.proton.me/
+                icon: fa:envelope
               - title: Proton Calendar
-                url: https://calendar.proton.me
-                icon: mdi:calendar
+                url: https://calendar.proton.me/
+                icon: fa:calendar
               - title: Cloudflare
-                url: https://dash.cloudflare.com
-                icon: si:cloudflare
+                url: https://dash.cloudflare.com/
+                icon: fa:cloud
               - title: Cryptee
-                url: https://cryptee.co
-                icon: mdi:lock
+                url: https://crypt.ee/docs
+                icon: fa:lock
               - title: WhatsApp Web
                 url: https://web.whatsapp.com
-                icon: si:whatsapp
+                icon: fa:whatsapp
+              - title: Hogeschool Rotterdam
+                url: https://mijn.hr.nl/
+                icon: fa:graduation-cap
 
           - type: bookmarks
             groups:
               - title: Development
                 links:
-                  - title: GitHub
-                    url: https://github.com
-                  - title: GitLab
-                    url: https://gitlab.com
-                  - title: StackOverflow
-                    url: https://stackoverflow.com
-                  - title: TypeScript Docs
-                    url: https://www.typescriptlang.org/docs/
-                  - title: MDN Web Docs
-                    url: https://developer.mozilla.org/
-              - title: Productivity
-                links:
-                  - title: Notion
-                    url: https://notion.so
-                  - title: Google Drive
-                    url: https://drive.google.com
-              - title: Tools
-                links:
+                  - title: Personal GitHub
+                    url: https://github.com/iiroan
                   - title: CodeSandbox
-                    url: https://codesandbox.io/
-                  - title: StackBlitz
-                    url: https://stackblitz.com/
-                  - title: CodePen
-                    url: https://codepen.io/
+                    url: https://codesandbox.io/dashboard
+                  - title: npm
+                    url: https://www.npmjs.com/
+                  - title: PyPI
+                    url: https://pypi.org/
+                  - title: Hugging Face
+                    url: https://huggingface.co/
+              - title: Design
+                links:
+                  - title: Figma
+                    url: https://www.figma.com/files
+                  - title: v0.dev
+                    url: https://v0.dev/
+              - title: Gaming
+                links:
+                  - title: Porofessor
+                    url: https://porofessor.gg/live/euw/cousinsbybirth-gawk
 
           - type: rss
             title: JS/TS Ecosystem News
