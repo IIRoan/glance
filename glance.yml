@@ -29,11 +29,6 @@ pages:
               - title: LinkApp home
                 url: https://links.roan.dev/roanhome
 
-          - type: reddit
-            subreddit: javascript
-            limit: 8
-            collapse-after: 6
-
       - size: full
         widgets:
           - type: search
@@ -97,55 +92,52 @@ pages:
           - type: group
             widgets:
               - type: hacker-news
-              - type: lobsters
-
-          - type: group
-            widgets:
               - type: reddit
                 subreddit: webdev
                 show-thumbnails: true
-                limit: 8
-              - type: reddit
-                subreddit: reactjs
-                show-thumbnails: true
-                limit: 8
+                limit: 6
+
+          - type: rss
+            title: DevOps & Cloud News
+            limit: 12
+            collapse-after: 8
+            cache: 6h
+            feeds:
+              - url: https://thenewstack.io/feed
+                title: The New Stack
+              - url: https://devops.com/feed
+                title: DevOps.com
+              - url: https://kubernetes.io/feed.xml
+                title: Kubernetes Blog
+              - url: https://aws.amazon.com/blogs/devops/feed/
+                title: AWS DevOps
+              - url: https://cloudblog.withgoogle.com/products/devops-sre/rss/
+                title: Google Cloud DevOps
 
       - size: small
         widgets:
-          - type: reddit
-            subreddit: typescript
-            limit: 8
-            collapse-after: 6
-
           - type: rss
-            title: Web Dev Blogs
-            limit: 12
+            title: Web Dev
+            limit: 10
             collapse-after: 8
             cache: 12h
             feeds:
-              - url: https://www.joshwcomeau.com/rss.xml
-                title: Josh Comeau
-              - url: https://2ality.com/feeds/posts.atom
-                title: 2ality JS/TS
-              - url: https://jakearchibald.com/posts.rss
-                title: Jake Archibald
-              - url: https://kentcdodds.com/blog/rss.xml
-                title: Kent C. Dodds
               - url: https://css-tricks.com/feed/
                 title: CSS-Tricks
               - url: https://blog.logrocket.com/feed/
                 title: LogRocket
-              - url: https://davidwalsh.name/feed
-                title: David Walsh
+              - url: https://blog.jetbrains.com/webstorm/feed/
+                title: WebStorm Blog
 
           - type: releases
-            title: JS/TS Updates
+            title: CI/CD Tools
             cache: 1d
             repositories:
-              - microsoft/typescript
-              - facebook/react
-              - vuejs/core
-              - angular/angular
-              - sveltejs/svelte
-              - vercel/next.js
-              - oven-sh/bun
+              - actions/runner
+              - jenkinsci/jenkins
+              - harness/drone
+              - argoproj/argo-cd
+              - gitlab/gitlab-runner
+              - terraform-providers/terraform-provider-aws
+              - hashicorp/terraform
+              - docker/docker-ce
